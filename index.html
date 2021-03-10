@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap"
+    rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+
+<body class="no-scroll">
 
 
   <!-- Header -->
@@ -24,7 +27,7 @@
           <div class="user__content">
             <div class="user__name">
               Lewis<br>Nathaniel
-             </div>
+            </div>
             <div class="user__prof">
               UI &amp; UX Designer
             </div>
@@ -90,7 +93,7 @@
         <a class="works__nav-link">Website</a>
         <a class="works__nav-link">Interaction</a>
       </div>
-      
+
       <div class="portfolio">
         <div class="portfolio__col">
 
@@ -177,7 +180,7 @@
 
         </div>
       </div> <!-- ./portfolio -->
-      
+
       <div class="text-center">
         <a class="btn btn--sm" href="#">load more</a>
       </div>
@@ -231,19 +234,19 @@
       <div class="reviews__item">
         <div class="reviews__text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Tenetur autem omnis voluptate voluptates facilis quas totam 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Tenetur autem omnis voluptate voluptates facilis quas totam
             temporibus quia perferendis asperiores!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Tenetur autem omnis voluptate voluptates facilis quas totam 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Tenetur autem omnis voluptate voluptates facilis quas totam
             temporibus quia perferendis asperiores!
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Tenetur autem omnis voluptate voluptates facilis quas totam 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Tenetur autem omnis voluptate voluptates facilis quas totam
             temporibus quia perferendis asperiores!
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Tenetur autem omnis voluptate voluptates facilis quas totam 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Tenetur autem omnis voluptate voluptates facilis quas totam
             temporibus quia perferendis asperiores!
           </p>
         </div>
@@ -418,5 +421,53 @@
       </div>
     </div>
   </footer>
+
+
+
+  <!-- Modals -->
+
+  <div class="modal" style="display: none;">
+    <div class="modal__dialog">
+      <button class="modal__close" type="button">
+        <img src="images/modal-close.svg" alt="Close">
+      </button>
+
+      <div class="modal-work">
+        <div class="modal-work__preview">
+          <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+        </div>
+        <div class="modal-work__content">
+          <div class="modal-work__header">
+            <h3 class="modal-work__title">Project title</h3>
+            <div class="modal-work__info">
+              category <span class="modal-work__info-devider">|</span> 2021
+            </div>
+          </div>
+          <div class="modal-work__client">
+            <div class="modal-work__client-title">Client:</div>
+            <div class="modal-work__client-company">Creative agency</div>
+          </div>
+          <div class="modal-work__text">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure rem repellat nihil iste incidunt unde tempore
+              accusamus, illum officiis natus, non dolorum harum officia aliquam quaerat expedita quia exercitationem quasi vitae,
+              id ipsam culpa. Eius qui eveniet deleniti sequi earum impedit error est hic quidem, totam voluptas illum veniam
+              dolorum!</p>
+          </div>
+          <div class="modal-work__footer">
+            <button class="modal-work__btn">
+              <img src="images/left-arrow.svg" height="12" alt="Previous">
+              Previous
+            </button>
+            <button class="modal-work__btn">
+              Next
+              <img src="images/right-arrow.svg" height="12" alt="Next">
+            </button>
+          </div>
+        </div> <!-- ./modal-work__content -->
+      </div> <!-- ./modal-work -->
+
+    </div> <!-- ./modal__dialog -->
+  </div> <!-- ./modal -->
 </body>
+
 </html>
