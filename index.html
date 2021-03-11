@@ -10,6 +10,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
 </head>
 
 <!-- class="no-scroll" -->
@@ -40,7 +45,7 @@
           <a class="nav__link" href="">about me</a>
           <a class="nav__link" href="">blog</a>
           <a class="nav__link" href="">contact</a>
-          <a class="nav__link nav__link--btn" href="">hire me</a>
+          <a class="nav__link nav__link--btn" data-modal="#modal_hire_me">hire me</a>
         </nav>
       </div>
     </div>
@@ -76,8 +81,8 @@
             </a>
           </div>
 
-          <a class="btn" href="#">hire me</a>
-          <button class="btn" type="button">see my resume</button>
+          <a class="btn" href="#" data-modal="#modal_hire_me">hire me</a>
+          <button class="btn" type="button" data-modal="#modal_resume">see my resume</button>
         </div>
 
         <img class="intro__photo" src="images/photo.png" alt="">
@@ -89,19 +94,70 @@
   <div class="works">
     <div class="container">
       <div class="works__nav">
-        <a class="works__nav-link">App</a>
-        <a class="works__nav-link">All</a>
-        <a class="works__nav-link">Website</a>
-        <a class="works__nav-link">Interaction</a>
+        <a class="works__nav-link" data-filter="all">All</a>
+        <a class="works__nav-link" data-filter="app">App</a>
+        <a class="works__nav-link" data-filter="website">Website</a>
+        <a class="works__nav-link" data-filter="interaction">Interaction</a>
       </div>
 
       <div class="portfolio">
-        <div class="portfolio__col">
+        <div class="portfolio__col" data-cat="app">
+          <div class="work" data-modal="#modal_project_1">
+            <img class="work__image" src="https://placehold.it/370x300/333" alt="">
+            <div class="work__content">
+              <div class="work__cat">Category App</div>
+              <div class="work__title">
+                Project title
+                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__col" data-cat="website">
+          <div class="work">
+            <img class="work__image" src="https://placehold.it/370x300/333" alt="">
+            <div class="work__content">
+              <div class="work__cat">Category Website</div>
+              <div class="work__title">
+                Project title
+                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__col" data-cat="interaction">
+          <div class="work">
+            <img class="work__image" src="https://placehold.it/370x300/333" alt="">
+            <div class="work__content">
+              <div class="work__cat">Category Interaction</div>
+              <div class="work__title">
+                Project title
+                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio__col" data-cat="app">
+          <div class="work">
+            <img class="work__image" src="https://placehold.it/370x300/333" alt="">
+            <div class="work__content">
+              <div class="work__cat">Category App</div>
+              <div class="work__title">
+                Project title
+                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__col" data-cat="website">
 
           <div class="work">
             <img class="work__image" src="https://placehold.it/370x300/333" alt="">
             <div class="work__content">
-              <div class="work__cat">Category</div>
+              <div class="work__cat">Category Website</div>
               <div class="work__title">
                 Project title
                 <time class="work__date" datetime="2019-11-22 19:00">2019</time>
@@ -110,68 +166,12 @@
           </div>
 
         </div>
-        <div class="portfolio__col">
+        <div class="portfolio__col" data-cat="interaction">
 
           <div class="work">
             <img class="work__image" src="https://placehold.it/370x300/333" alt="">
             <div class="work__content">
-              <div class="work__cat">Category</div>
-              <div class="work__title">
-                Project title
-                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="portfolio__col">
-
-          <div class="work">
-            <img class="work__image" src="https://placehold.it/370x300/333" alt="">
-            <div class="work__content">
-              <div class="work__cat">Category</div>
-              <div class="work__title">
-                Project title
-                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="portfolio__col">
-
-          <div class="work">
-            <img class="work__image" src="https://placehold.it/370x300/333" alt="">
-            <div class="work__content">
-              <div class="work__cat">Category</div>
-              <div class="work__title">
-                Project title
-                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="portfolio__col">
-
-          <div class="work">
-            <img class="work__image" src="https://placehold.it/370x300/333" alt="">
-            <div class="work__content">
-              <div class="work__cat">Category</div>
-              <div class="work__title">
-                Project title
-                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="portfolio__col">
-
-          <div class="work">
-            <img class="work__image" src="https://placehold.it/370x300/333" alt="">
-            <div class="work__content">
-              <div class="work__cat">Category</div>
+              <div class="work__cat">Category Interaction</div>
               <div class="work__title">
                 Project title
                 <time class="work__date" datetime="2019-11-22 19:00">2019</time>
@@ -219,8 +219,8 @@
               pariatur error.
             </p>
           </div>
-          <a class="btn" href="#">hire me</a>
-          <button class="btn" type="button">see my resume</button>
+          <a class="btn" href="#" data-modal="#modal_hire_me">hire me</a>
+          <button class="btn" type="button" data-modal="#modal_resume">see my resume</button>
         </div> <!-- /.about__content -->
 
       </div> <!-- /.about__inner -->
@@ -423,13 +423,11 @@
     </div>
   </footer>
 
-
-
   <!-- Modals -->
 
-  <div class="modal" style="display: none;">
+  <div class="modal" id="modal_project_1">
     <div class="modal__dialog">
-      <button class="modal__close" type="button">
+      <button class="modal__close" type="button" data-close>
         <img src="images/modal-close.svg" alt="Close">
       </button>
 
@@ -470,9 +468,9 @@
     </div> <!-- ./modal__dialog -->
   </div> <!-- ./modal -->
 
-  <div class="modal" style="display: none;">
+  <div class="modal" id="modal_resume">
     <div class="modal__dialog">
-      <button class="modal__close" type="button">
+      <button class="modal__close" type="button" data-close>
         <img src="images/modal-close.svg" alt="Close">
       </button>
 
@@ -640,9 +638,9 @@
     </div> <!-- ./modal__dialog -->
   </div> <!-- ./modal -->
 
-  <div class="modal" style="display: none;">
+  <div class="modal" id="modal_hire_me" data-close>
     <div class="modal__dialog modal__dialog--sm">
-      <button class="modal__close" type="button">
+      <button class="modal__close" type="button" data-close>
         <img src="images/modal-close.svg" alt="Close">
       </button>
 
@@ -682,6 +680,8 @@
       </div> <!-- ./contact -->
     </div> <!-- ./modal__dialog -->
   </div> <!-- ./modal -->
+
+  <script src="js/app.js"></script>
 </body>
 
 </html>
