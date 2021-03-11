@@ -22,6 +22,10 @@
     margin: auto;
 
     background-color: #fff;
+
+    &--sm {
+        max-width: 900px;
+    }
 }
 
 .modal__close {
@@ -51,10 +55,15 @@
 
 .modal__title {
     margin-bottom: 3.6rem;
-
     color: @black;
-    text-align: center;
     font-weight: 700;
     font-size: 3rem;
     text-transform: uppercase;
+}
+
+.modal__subtitle {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.06rem;
+    color: @black;
 }

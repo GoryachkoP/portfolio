@@ -4,20 +4,14 @@
     margin-bottom: 2.6rem;
 }
 
-.progress-bar__row {
-    display: flex;
-    align-items: center;
-
-    margin-bottom: 0.5rem;
-}
-
-.progress-bar__left {
-
-}
 
 .progress-bar__title {
     font-size: 0.94rem;
     font-weight: 300;
+}
+
+.progress-bar__left {
+    min-width: 95px;
 }
 
 .progress-bar__right {
@@ -25,6 +19,13 @@
 }
 
 .progress-bar__item {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar__bar {
     width: 139px;
     height: 6px;
     background-color: #EFEFEF;
@@ -33,6 +34,6 @@
 .progress-bar__progress {
     height: 100%;
 
-    background-color:@gray;
+    background-color: @gray;
     transition: width .2s linear;
 }

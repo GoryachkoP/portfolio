@@ -477,7 +477,7 @@
       </button>
 
       <div class="modal__content">
-        <h3 class="modal__title">Resume</h3>
+        <h3 class="modal__title text-center">Resume</h3>
 
         <div class="text-center">
           <a href="#" class="btn btn--thin">Download pdf</a>
@@ -500,7 +500,7 @@
                   ratione laudantium, illo, minima distinctio sint corporis saepe ipsam consequuntur!
                 </p>
               </div>
-            </div> <!-- ./timeline -->
+            </div> <!-- ./timeline__item -->
             <div class="timeline__item">
               <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
               <h5 class="timeline__subtitle">Freelancer</h5>
@@ -511,7 +511,7 @@
                   ratione laudantium, illo, minima distinctio sint corporis saepe ipsam consequuntur!
                 </p>
               </div>
-            </div> <!-- ./timeline -->
+            </div> <!-- ./timeline__item -->
             <div class="timeline__item">
               <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
               <h5 class="timeline__subtitle">Freelancer</h5>
@@ -522,7 +522,7 @@
                   ratione laudantium, illo, minima distinctio sint corporis saepe ipsam consequuntur!
                 </p>
               </div>
-            </div> <!-- ./timeline -->
+            </div> <!-- ./timeline__item -->
             <div class="timeline__item">
               <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
               <h5 class="timeline__subtitle">Freelancer</h5>
@@ -533,7 +533,7 @@
                   ratione laudantium, illo, minima distinctio sint corporis saepe ipsam consequuntur!
                 </p>
               </div>
-            </div> <!-- ./timeline -->
+            </div> <!-- ./timeline__item -->
           </div>
 
           <div class="timeline__col timeline__col--left">
@@ -545,56 +545,56 @@
               <time class="timeline__date" datetime="11-21-2019">2005 - 2010</time>
               <h5 class="timeline__subtitle">UI/UX Design</h5>
               <div class="timeline__position">LA University, USA</div>
-            </div> <!-- ./timeline -->
+            </div> <!-- ./timeline__item -->
 
             <div class="timeline__item">
               <time class="timeline__date" datetime="11-21-2019">2005 - 2010</time>
               <h5 class="timeline__subtitle">UI/UX Design</h5>
               <div class="timeline__position">LA University, USA</div>
-            </div> <!-- ./timeline -->
+            </div> <!-- ./timeline__item -->
 
             <h4 class="timeline__title">
               skills
             </h4>
 
             <div class="progress-bar">
-              <div class="progress-bar__row">
+              <div class="progress-bar__item">
                 <div class="progress-bar__left">
                   <div class="progress-bar__title">UI/UX Design</div>
                 </div>
                 <div class="progress-bar__right">
-                  <div class="progress-bar__item">
+                  <div class="progress-bar__bar">
                     <div class="progress-bar__progress" style="width: 90%;"></div>
                   </div>
                 </div>
               </div>
-              <div class="progress-bar__row">
+              <div class="progress-bar__item">
                 <div class="progress-bar__left">
                   <div class="progress-bar__title">Illustrator</div>
                 </div>
                 <div class="progress-bar__right">
-                  <div class="progress-bar__item">
-                    <div class="progress-bar__progress" style="width: 50%;"></div>
+                  <div class="progress-bar__bar">
+                    <div class="progress-bar__progress" style="width: 70%;"></div>
                   </div>
                 </div>
               </div>
-              <div class="progress-bar__row">
+              <div class="progress-bar__item">
                 <div class="progress-bar__left">
                   <div class="progress-bar__title">Photoshop</div>
                 </div>
                 <div class="progress-bar__right">
-                  <div class="progress-bar__item">
-                    <div class="progress-bar__progress" style="width: 20%;"></div>
+                  <div class="progress-bar__bar">
+                    <div class="progress-bar__progress" style="width: 50%;"></div>
                   </div>
                 </div>
               </div>
-              <div class="progress-bar__row">
+              <div class="progress-bar__item">
                 <div class="progress-bar__left">
                   <div class="progress-bar__title">Sketch</div>
                 </div>
                 <div class="progress-bar__right">
-                  <div class="progress-bar__item">
-                    <div class="progress-bar__progress" style="width: 55%;"></div>
+                  <div class="progress-bar__bar">
+                    <div class="progress-bar__progress" style="width: 40%;"></div>
                   </div>
                 </div>
               </div>
@@ -630,14 +630,56 @@
               </div>
             </div> <!-- ./timeline-item -->
           </div>
-        </div>
+        </div> <!-- ./timeline -->
 
-        
         <div class="text-center">
-          <div class="btn">hire me</div>
+          <button class="btn">hire me</button>
         </div>
-      </div>
+      </div> <!-- ./modal__content -->
 
+    </div> <!-- ./modal__dialog -->
+  </div> <!-- ./modal -->
+
+  <div class="modal" style="display: none;">
+    <div class="modal__dialog modal__dialog--sm">
+      <button class="modal__close" type="button">
+        <img src="images/modal-close.svg" alt="Close">
+      </button>
+
+      <div class="contact">
+        <div class="contact__left">
+          <h3 class="modal__title mb-0">Let's talk!</h3>
+
+          <h4 class="modal__subtitle">
+            CALL ME OR SEND ME A REQUEST
+          </h4>
+
+          <ul class="contact__info">
+            <li class="contact__info-item">
+              <img class="contact__info-icon" src="images/phone.svg" alt="Phone number">
+              (200) 100 3000
+            </li>
+            <li class="contact__info-item">
+              <img class="contact__info-icon" src="images/mail.svg" alt="Email">
+              designer@ui43.com
+            </li>
+          </ul>
+
+          <form class="form" action="" method="post">
+            <div class="form__group">
+              <label class="form__label" for="input-email">Address email</label>
+              <input id="input-email" class="form__input" type="text" name="input-email" placeholder="Adress e-mail">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="input-area">Request</label>
+              <textarea id="input-area" class="form__textarea" type="text" name="input-area" placeholder="Type your request..."></textarea>
+            </div>
+            <div class="text-right">
+              <button class="btn" type="">send</button>
+            </div>
+          </form>
+        </div> <!-- ./contact__left -->
+      </div> <!-- ./contact -->
     </div> <!-- ./modal__dialog -->
   </div> <!-- ./modal -->
 </body>
