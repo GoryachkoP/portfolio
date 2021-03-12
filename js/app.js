@@ -1,5 +1,32 @@
 $(function () {
 
+    const worksSlider = $('[data-slider="slick"]')
+
+    /* Slider: https://kenwheeler.github.io/slick/ */
+
+    worksSlider.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        infinite: true,
+        autoplay: true,
+        arrows: false,
+        dots: true
+      });
+
+      $('.slickPrev').on("click", function (event) {
+        event.preventDefault()
+
+        let currentSlider = $(this).parents(".modal").find('[data-slider="slick"]')
+        currentSlider.slick("slickPrev")
+      })
+
+      $('.slickNext').on("click", function (event) {
+        event.preventDefault()
+        let currentSlider = $(this).parents(".modal").find('[data-slider="slick"]')
+        currentSlider.slick("slickNext")
+      })
+
     /* Modal */
     
     const modalCall = $("[data-modal]")
@@ -20,6 +47,8 @@ $(function () {
                 transform: "rotateX(0)"
             })
         }, 200)
+
+        worksSlider.slick('setPosition')
     })
 
     modalClose.on("click", function (e) {
