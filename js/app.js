@@ -1,5 +1,13 @@
 $(function () {
 
+    /* Nav menu */
+
+    $("#navToggle").on("click", function (e) {
+        e.preventDefault()
+
+        $("#nav").toggleClass("show")
+    })
+
     const worksSlider = $('[data-slider="slick"]')
 
     /* Slider: https://kenwheeler.github.io/slick/ */
